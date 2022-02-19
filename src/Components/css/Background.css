@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cinzel+Decorative:wght@700&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cinzel+Decorative:wght@700&family=Monoton&display=swap');
+
+body{
+    margin: 1% 2% 2% 2%;
+    zoom: 80%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.ht1{
+    margin-left: 45%;
+    font-size: 40px;
+
+}
+.ht11{
+    transform: rotate(270deg);
+    display: inline-block;
+}
+.ht12{
+    font-weight: 1000;
+    padding-left: 1%;
+}
+.h1{
+    margin-left: 8%;
+    font-size: 3rem;
+}
+.flex1{
+    display: flex;
+    margin-top: 2%;
+    justify-content: space-around;
+    /* font-family: 'Allura', cursive; */
+    font-weight: 500;
+    font-size: 2rem;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.one{
+    grid-column:1/2;
+    grid-row: 1/4;
+    padding:10px;
+    position: relative;
+    cursor: pointer;
+}
+.one img{
+    border-radius: 15px;
+    height: 535px;
+    opacity: 95%;
+
+}
+.two{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 10px;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+
+}
+.two img{
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 80%;
+}
+.one img:hover, .two img:hover, .three img:hover{
+    opacity: 150%;
+}
+.three{
+    grid-column: 2/3;
+    grid-row: 2;
+    padding-left: 10px;
+    cursor: pointer;
+    margin-top: -8%;
+    position: relative;
+    object-fit: contain;
+}
+.three img{
+    height: 275px;
+    width: 490px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 5%;
+    padding-top: 10px;
+    opacity: 95%;
+
+}
+
+.onet{
+    position: absolute;
+    top: 65%;
+    left:3% ;
+    font-size: 3rem;
+    color: black;
+    backdrop-filter: blur(2px);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.twot{
+    position: absolute;
+    top: 45%;
+    left:5% ;
+    font-size: 2rem;
+    width: 350px;
+    color: black;
+    backdrop-filter: blur(2px);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}
+.threet{
+    position: absolute;
+    top: 54%;
+    left:5% ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: black;
+}
+.hlhr{
+    margin-left: 1%;
+    height: 3px;
+    background-color: rgb(35, 46, 202);
+    width: 9%;
+    margin-top: .5%;
+    border: none;
+}
+/* ------------------Latest Cards------------------ */
+.flex2{
+    display: flex;
+}
+.hcc1{
+    width: 400px;
+    height: 500px;
+    font-size: 15px;
+}
+.hcc1 img{
+    height: 290px;
+    width: 500px;
+    object-fit: poster;
+    border-radius:15px 15px 0px 0px;
+}
+.hc1{
+    border: 1px solid grey;
+    width: 500px;
+    box-shadow: 10px 5px 5px grey;
+    cursor: pointer;
+    margin-right: 3%;
+    height: 480px;
+    border-radius: 15px;
+}
+.hcc1, .hcc2{
+    text-decoration: none;
+    color: black;
+}
+.hcc1:hover, .hcc2:hover{
+    color: red;
+}
+.f50per{
+    width: 65%;
+    margin-left: 1px;
+}
+.hc2{
+    font-size: 15px;
+}
+.c1h3, .c1h5{
+    margin-left: 3%;
+}
+.c1h5, .c2h5{
+    font-size: 18px;
+    color: rgb(58, 55, 55);
+}
+.vh5 h5{
+    color: grey;
+    font-size: 22px;
+    margin-top: -2%;
+}
+.c1h4{
+    color:grey;
+    margin-left: 3%;
+}
+.c2h5{
+    position: absolute;
+    margin-left: 24%;
+    margin-top: -6%;
+    cursor: pointer;
+    width: 300px;
+}
+.c1h7{
+    position: absolute;
+    margin-left: 24%;
+    margin-top: -3%;
+    cursor: pointer;
+    color:grey;
+}
+.advr{
+    margin-left: 52%;
+    object-fit: contain;
+    height: 650px;
+    width:400px;
+    border-radius: 15px;
+}
+.advr:hover{
+    object-fit:cover;
+    cursor: pointer;
+}
+.advs{
+    position: absolute;
+    left: 63%;
+    height: 700px;
+}
+/* ----------------------------------------------- */
+.tollyh, .vih1{
+    margin-left: 10%;
+    color: rgb(241, 64, 58);
+    font-size: 3rem;
+    font-family: 'Press Start 2P', cursive;
+}
+.thhr{
+    margin-left: 11%;
+    height: 3px;
+    background:rgb(255, 23, 23);
+    width: 9%;
+    margin-top: -1.5%;
+    border: none;
+}
+.tolly{
+    margin-left: 10%;
+    margin-top: 2%;
+    color: black;
+}
+.tollyt:hover{
+    color: red;
+}
+
+.tollyi img{
+    height: 225px;
+    cursor: pointer;
+    width: 400px;
+
+}
+.tollyt{
+    position: absolute;
+    margin-left: 24%;
+    margin-top: -12%;
+    cursor: pointer;
+    width: 300px;
+}
+.tolly h5{
+    position: absolute;
+    margin-left: 24%;
+    margin-top: -5%;
+    cursor: pointer;
+    width: 300px;
+}
+.tolly hr{
+    width: 60%;
+    float: left;
+}
+.tollyd{
+ color: rgb(65, 60, 60);
+ font-size: 16px;
+}
+.tollyn{
+    color: rgb(32, 30, 30);
+    font-size: 18px;
+    margin-top: 1%;
+}
+.adv{
+    height: 600px;
+    width: 400px;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    object-fit:fill;
+    border-radius: 10px;
+}
+.loadmore{
+    height: 60px;
+    width: 145px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+/* .loadmore:hover{
+    background: rgb(75, 235, 141);
+} */
+/* --------------View Data-------------------- */
+.viewD{
+    margin: 2% 10% 0% 18%;
+    border: 2px solid black;
+    width: 60%;
+    box-shadow: 10px 5px 5px grey;
+
+}
+.vimg img{
+    height: 500px;
+    width: 900px;
+    object-fit: contain;
+    margin: 0% 3% 2% 8% ;
+}
+.vh3{
+    margin-left: 5%;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 30px;
+}
+.vh5{
+    margin-left: 5%;
+    font-size: 20px;
+}
+.vp{
+    margin-left: 5%;
+    width: 900px;
+    font-size: 25px;
+    text-align: justify;
+}
+.clap{
+    position: absolute;
+    top:80%;
+    right:15%;
+}
+.clap1{
+    font-size: 50px;
+    cursor: pointer;
+}
+.clap h1{
+    margin-left: 1%;
+}
+/* --------Aboutus------------------------- */
+.social{
+    display: flex;
+    padding: 10px;
+    font-size: 40px;
+}
+.social i{
+    padding: 10px;
+    cursor:pointer;
+}
+.nam{
+    font-family: 'Monoton', cursive;
+    font-size: 70px;
+}
+.name{
+    margin-left: 10%;
+}

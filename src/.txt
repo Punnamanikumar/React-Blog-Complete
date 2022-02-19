@@ -1,0 +1,95 @@
+import React,{useContext} from "react";
+import { Link } from "react-router-dom";
+import { HomeContext } from "../context/Context";
+const Home = () => {
+  const [home] = useContext(HomeContext)
+  return (
+    <div className="h1">
+           <div>
+            {home.map((hom) => (
+              <div key={hom.id}>
+                <div component="th" scope="row">{hom.det}</div>
+                <img src={hom.imgUrl} alt="" />
+                {/* <TableCell align="right">{student.course}</TableCell> */}
+                {/* <TableCell align="right">{student.batch}</TableCell> */}
+                {/* <TableCell align="right"><NavLink to={`/students-desc/${student.id}`}>Edit</NavLink></TableCell> */}
+              </div>
+            ))}
+          </div>
+    </div>
+  );
+};
+
+export default Home;
+// <Link to="/nature" className="one"><img src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg" alt="" /><div className="onet"> Look deep into nature, and then you will understand <br /> everything better. </div></Link>
+           //{/* <Link to='/jobs' className="two"><img src="https://cdn.siasat.com/wp-content/uploads/2020/03/Cognizant-Chennai.webp" alt="" height={"250px"} width={"480px"}/><div className="twot"> Hyderabad:<br />  Good news for job seekers </div></Link> */}
+           //{/* <Link to='/technology' className="three"><img src="https://exstatic-in.iqoo.com/Oz84QB3Wo0uns8j1/1587816779408/c755c360bb5ae623605579930919bb1a.png.webp" alt="" height={"350px"} width={"480px"} /><div className="threet"> iQOO UI:<br /> Android 12 Funtouch OS 12 </div></Link> */}
+       
+      // <div className="grid1">
+      //   {home.map((hom)=>(<div key={hom.id}>
+      //     <Link to="/nature" className="one"><div className="onet"> {hom.det} </div></Link>
+      //       {/* <Link to='/jobs' className="two"><img src="https://cdn.siasat.com/wp-content/uploads/2020/03/Cognizant-Chennai.webp" alt="" height={"250px"} width={"480px"}/><div className="twot"> Hyderabad:<br />  Good news for job seekers </div></Link> */}
+      //      {/* <Link to='/technology' className="three"><img src="https://exstatic-in.iqoo.com/Oz84QB3Wo0uns8j1/1587816779408/c755c360bb5ae623605579930919bb1a.png.webp" alt="" height={"350px"} width={"480px"} /><div className="threet"> iQOO UI:<br /> Android 12 Funtouch OS 12 </div></Link> */}
+      //  </div>
+      //     ))}
+      //   </div>
+      // <div>
+      //   <div>The Latest</div>
+      //   <div className="flex2"></div>
+      // </div>
+
+
+
+      import React,{createContext,useState} from "react";
+
+export const HomeContext=createContext();
+
+export const HomeProvider=(props)=>{
+    const [home,setHome] = useState([
+        {
+            img:"https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg",
+            det:"Look deep into nature, and then you will understand <br /> everything better.",
+            id:"1"
+
+        },
+        {
+            img:"https://cdn.siasat.com/wp-content/uploads/2020/03/Cognizant-Chennai.webp",
+            det:" Good news for job seekers ",
+            id:"2"
+
+        },
+        {
+            imgUrl:"https://exstatic-in.iqoo.com/Oz84QB3Wo0uns8j1/1587816779408/c755c360bb5ae623605579930919bb1a.png.webp",
+            det:"iQOO UI:<br /> Android 12 Funtouch OS 12",
+            id:"3"
+        },
+    ]
+    
+    
+    );
+    return(
+        <HomeContext.Provider value={[home,setHome]}>
+            {props.children}
+        </HomeContext.Provider>
+    )
+}
+
+export const TollwoodContext=createContext();
+
+export const TollywoodProvider=(props)=>{
+    const [tolly,setTolly]=useState([
+        {
+            imgt:"https://static-koimoi.akamaized.net/wp-content/new-galleries/2022/01/overcoming-the-odds-tollywood-eyes-2022-with-relish-001.jpg",
+            det:"Radhe Shyam, Pushpa 2 & Other Biggies To Take Tollywood A Step Higher In 2022"
+        },
+        {
+            imgt:"https://static-koimoi.akamaized.net/wp-content/new-galleries/2022/01/pushpa-to-cross-250-crore-mark-today-001.jpg",
+            det:"Pushpa Box Office Day 23 (Early Trends): Picks Up Terrifically On 4th Saturday",
+        }
+    ])
+    return(
+        <TollywoodProvider value={[tolly]}>
+            {props.children}
+        </TollywoodProvider>
+    )
+}
