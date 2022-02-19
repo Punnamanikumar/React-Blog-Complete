@@ -23,7 +23,8 @@ const ViewData = () => {
                 });
             }})
         });
-    },[dataa]);
+        window.scrollTo(0, 0)
+    },[id]);
  
 
 
