@@ -8,7 +8,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("https://manikumar-react-blog-server.herokuapp.com/api/blog/")
+      .get("https://manikumar-react-blog-server.herokuapp.com/api/blog")
       .then((res) => {
         setHome(res.data);
       });

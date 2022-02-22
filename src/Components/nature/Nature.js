@@ -8,7 +8,7 @@ const Nature = () => {
   const [nature, setNature] = useState([]);
   useEffect(() => {
     axios
-      .get("https://manikumar-react-blog-server.herokuapp.com/api/blog/")
+      .get("https://manikumar-react-blog-server.herokuapp.com/api/blog/nature")
       .then((res) => {
         setNature(res.data);
       });

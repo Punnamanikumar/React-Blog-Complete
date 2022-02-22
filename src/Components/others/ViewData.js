@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import Bottom from '../bottom/Bottom'
-import Footer from '../footer/Footer'
 import { useParams } from 'react-router-dom'
 
 const ViewData = () => {
@@ -10,7 +9,7 @@ const ViewData = () => {
 
 
     useEffect(() => {
-        axios.get("https://manikumar-react-blog-server.herokuapp.com/api/blog/").then((res) => {
+        axios.get(`https://manikumar-react-blog-server.herokuapp.com/api/blog/?id=${id}`).then((res) => {
             res.data.forEach((view)=>{
             if(view.id === id){
                 console.log("Matched Param");
@@ -21,7 +20,9 @@ const ViewData = () => {
                     description:view.description,
                     category:view.category,
                 });
-            }})
+            }
+        })
+       
         });
         window.scrollTo({
             top: 0,
@@ -29,7 +30,6 @@ const ViewData = () => {
             behavior: "smooth"
           })
     },[id]);
- 
 
 
     
@@ -45,8 +45,7 @@ const ViewData = () => {
                <div className='vp'><p>{dataa.description}</p></div>
             </div>
             </div>
-            <Bottom/><br/>
-            <Footer/>
+            <Bottom/>
         </div>
     )
 }

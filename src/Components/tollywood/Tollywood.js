@@ -9,7 +9,9 @@ const Tollywood = () => {
 
   useEffect(() => {
     axios
-      .get("https://manikumar-react-blog-server.herokuapp.com/api/blog/")
+      .get(
+        "https://manikumar-react-blog-server.herokuapp.com/api/blog/tollywood"
+      )
       .then((res) => {
         console.log(res);
         setTolly(res.data);

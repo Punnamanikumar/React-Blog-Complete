@@ -8,7 +8,7 @@ const Footer = () => {
 
   useEffect(() => {
     axios
-      .get("https://manikumar-react-blog-server.herokuapp.com/api/blog/")
+      .get("https://manikumar-react-blog-server.herokuapp.com/view/latest")
       .then((res) => {
         setFooter(res.data);
       });

@@ -6,9 +6,10 @@ const Bottom = () => {
   const [bottom, setBottom] = useState([]);
   useEffect(() => {
     axios
-      .get("https://manikumar-react-blog-server.herokuapp.com/api/blog/")
+      .get("https://manikumar-react-blog-server.herokuapp.com/view/latest")
       .then((res) => {
         setBottom(res.data);
+        // console.log(res.data, "resss");
       });
   }, []);
   return (
@@ -21,7 +22,7 @@ const Bottom = () => {
         <div className="flex2">
           <div className="hc1">
             {bottom
-              .filter((data) => data.id === "3")
+              .filter((data) => data.id === "4")
               .map((latest) => (
                 <Link
                   to={`/tollywood/${latest.id}`}
@@ -45,7 +46,7 @@ const Bottom = () => {
           </div>
           <div className="hc1">
             {bottom
-              .filter((data) => data.id === "6")
+              .filter((data) => data.id === "7")
               .map((latest) => (
                 <Link
                   to={`/technology/${latest.id}`}
@@ -69,7 +70,7 @@ const Bottom = () => {
           </div>
           <div className="hc1">
             {bottom
-              .filter((data) => data.id === "10")
+              .filter((data) => data.id === "11")
               .map((latest) => (
                 <Link
                   to={`/jobs/${latest.id}`}

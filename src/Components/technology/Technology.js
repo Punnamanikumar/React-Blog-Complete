@@ -8,7 +8,9 @@ const Technology = () => {
   const [technology, setTechnology] = useState([]);
   useEffect(() => {
     axios
-      .get("https://manikumar-react-blog-server.herokuapp.com/api/blog/")
+      .get(
+        "https://manikumar-react-blog-server.herokuapp.com/api/blog/technology"
+      )
       .then((res) => {
         setTechnology(res.data);
       });
