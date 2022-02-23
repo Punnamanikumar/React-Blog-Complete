@@ -6,11 +6,9 @@ import Bottom from "../bottom/Bottom";
 const Jobs = () => {
   const [jobs, setJobs] = React.useState([]);
   React.useEffect(() => {
-    axios
-      .get("https://manikumar-react-blog-server.herokuapp.com/api/blog/jobs")
-      .then((res) => {
+    axios.get("https://manikumar-react-blog-server.herokuapp.com/api/blog/jobs").then((res) => {
         setJobs(res.data);
-        console.log(res.data);
+        // console.log(res.data);
       });
   }, []);
   return (
@@ -18,25 +16,17 @@ const Jobs = () => {
       <h1 className="tollyh">Jobs</h1>
       <hr className="thhr" />
       {jobs.map((wood) => (
-        <div key={jobs.imgt} className="tolly">
+       <div key={jobs.imgt} className="tolly">
           <Link to={`/jobs/${wood.id}`} className="tolly">
-            <div className="tollyi">
-              <img src={wood.img} alt="" />
-            </div>
+            <div className="tollyi"><img src={wood.img} alt="" /></div>
             <h3 className="tollyt">{wood.det}</h3>
           </Link>
-          <h5 className="tollyd">{wood.date}</h5>
-          <hr />
-        </div>
+          <h5 className="tollyd">{wood.date}</h5><hr />
+       </div>
       ))}
       <div className="adv">
-        <img
-          src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2021/03/radhe-shyam-001.jpg"
-          className="adv"
-          alt=""
-        />
-      </div>
-      <br />
+        <img src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2021/03/radhe-shyam-001.jpg" className="adv" alt="" />
+      </div><br />
       <button className="loadmore">LoadMore</button>
       <Bottom />
     </div>

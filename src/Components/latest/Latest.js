@@ -19,79 +19,17 @@ const Latest = () => {
       <hr className="hlhr" />
       <div className="flex2">
         <div className="hc1">
-          {latest
-            // .filter((data) => data.id === "1")
-            .map((latest) => (
-              <Link
-                to={`/tollywood/${latest.id}`}
-                key={latest.id}
-                className="hcc1"
-              >
-                <div className="himg">
-                  <img src={latest.img} alt="" />
-                </div>
-                <div className="c1h3">
-                  <h3>{latest.det}</h3>
-                </div>
-                <div className="c1h5">
-                  <h5>{latest.id}</h5>
-                  {/* <h5>{latest.date}</h5> */}
-                </div>
-                <div className="c1h4">
-                  <h4>Category: {latest.category}</h4>
-                </div>
+          {latest.map((latest) => (
+              <Link to={`/tollywood/${latest.id}`} key={latest.id} className="hcc1">
+                <div className="himg"><img src={latest.img} alt="" /></div>
+                <div className="c1h3"><h3>{latest.det}</h3></div>
+                <div className="c1h5"><h5>{latest.id}</h5></div>
+                <div className="c1h4"><h4>Category: {latest.category}</h4></div>
               </Link>
             ))}
-        </div>
-        {/* {/* <div className="hc1">
-          {latest
-            .filter((data) => data.id === "5")
-            .map((latest) => (
-              <Link
-                to={`/technology/${latest.id}`}
-                key={latest.id}
-                className="hcc1"
-              >
-                <div className="himg">
-                  <img src={latest.img} alt="" />
-                </div>
-                <div className="c1h3">
-                  <h3>{latest.det}</h3>
-                </div>
-                <div className="c1h5">
-                  <h5>{latest.date}</h5>
-                </div>
-                <div className="c1h4">
-                  <h4>Category: {latest.category}</h4>
-                </div>
-              </Link>
-            ))}
-        </div>
-        <div className="hc1">
-          {latest
-            .filter((data) => data.id === "9")
-            .map((latest) => (
-              <Link to={`/jobs/${latest.id}`} key={latest.id} className="hcc1">
-                <div className="himg">
-                  <img src={latest.img} alt="" />
-                </div>
-                <div className="c1h3">
-                  <h3>{latest.det}</h3>
-                </div>
-                <div className="c1h5">
-                  <h5>{latest.date}</h5>
-                </div>
-                <div className="c1h4">
-                  <h4>Category: {latest.category}</h4>
-                </div>
-              </Link>
-            ))}
-        </div> */}
-        <br />
+        </div><br />
       </div>
-      <div style={{ marginLeft: "-8.5%", marginTop: "2%" }}>
-        <Footer />
-      </div>
+      <div style={{ marginLeft: "-8.5%", marginTop: "2%" }}><Footer /></div>
     </div>
   );
 };
