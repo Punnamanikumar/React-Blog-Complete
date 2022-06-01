@@ -31,7 +31,7 @@ const ViewData = () => {
 
     return (
         <div>
-            {dataa.img!="" ? 
+            {dataa.img!=="" ? 
             <div className='viewdata'>
             <h1 className='vih1'>{dataa.category}</h1><hr className='thhr'/>
             <div className='clap'><div className='clap1'>👏</div><h1>500</h1></div>

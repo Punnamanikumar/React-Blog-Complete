@@ -16,7 +16,7 @@ const Home = () => {
   }, []);
   return (
     <div>
-      {home.length!=0 ?
+      {home.length!==0 ?
           <div className="h1">
            <div className="grid1">
             <Link to="/nature/13" className="one">

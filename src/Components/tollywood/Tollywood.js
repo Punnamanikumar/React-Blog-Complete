@@ -18,7 +18,7 @@ const Tollywood = () => {
 
   return (
     <div>
-      {tolly.length!=0 ?
+      {tolly.length!==0 ?
           <div className="categorydiv">
           <h1 className="tollyh">TollyWood</h1>
           <hr className="thhr" />

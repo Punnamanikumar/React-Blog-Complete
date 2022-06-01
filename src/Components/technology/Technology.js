@@ -19,7 +19,7 @@ const Technology = () => {
 
   return (
     <div>
-      { technology.length!=0 ? 
+      { technology.length!==0 ? 
           <div className="categorydiv">
           <h1 className="tollyh">Technology</h1>
           <hr className="thhr" />

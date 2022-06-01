@@ -12,7 +12,7 @@ const Jobs = () => {
       });
   }, []);
   return (
-    <div>{(jobs.length!=0) ?
+    <div>{(jobs.length!==0) ?
      <div className="categorydiv">
           <h1 className="tollyh">Jobs</h1>
           <hr className="thhr" />
