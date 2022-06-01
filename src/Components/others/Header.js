@@ -9,9 +9,7 @@ const Header = () => {
         <span className="ht12">Siren</span>
       </div>
       <div className="menu">
-        <label htmlFor="check" >
-          <i class="fas fa-bars"></i>
-        </label>
+        <label htmlFor="check" ><i className="fas fa-bars"></i></label>
       </div>
       <div className="nav">
         <input type="checkbox" id="check" />

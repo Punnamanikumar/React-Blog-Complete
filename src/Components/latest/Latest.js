@@ -13,6 +13,7 @@ const Latest = () => {
         setLatest(res.data);
       });
   }, []);
+  
   return (
     <div>
       <div>The Latest</div>

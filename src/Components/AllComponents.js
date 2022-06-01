@@ -6,9 +6,9 @@ import Home from "./home/Home";
 import Technology from "./technology/Technology";
 import Jobs from "./jobs/Jobs";
 import Nature from "./nature/Nature";
-import Food from "./food/Food";
 import PageNotFound from "./others/PageNotFound";
 import ViewData from "./others/ViewData";
+import AboutUs from "./about/AboutUs";
 
 const AllComponents = () => {
   return (
@@ -23,7 +23,7 @@ const AllComponents = () => {
           <Route path="/technology" element={<Technology />} />
           <Route path="/jobs" element={<Jobs />} />
           <Route path="/nature" element={<Nature />} />
-          <Route path="/about" element={<Food />} />
+          <Route path="/about" element={<AboutUs />} />
           <Route path="/tollywood/:id" element={<ViewData />} />
           <Route path="/technology/:id" element={<ViewData />} />
           <Route path="/jobs/:id" element={<ViewData />} />

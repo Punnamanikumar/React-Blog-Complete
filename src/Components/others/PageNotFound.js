@@ -1,8 +1,5 @@
 import React from "react";
-
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
-</style>;
+<style>@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap')</style>;
 
 const style = {
   fontFamily: "Cinzel Decorative, cursive",
