@@ -30,23 +30,11 @@ const Footer = () => {
                 {footer
                   .filter((data) => data.id === "7")
                   .map((latest) => (
-                    <Link
-                      to={`/technology/${latest.id}`}
-                      key={footer.id}
-                      className="hcc1"
-                    >
-                      <div className="himg">
-                        <img src={latest.img} alt="" />
-                      </div>
-                      <div className="c1h3">
-                        <h3>{latest.det}</h3>
-                      </div>
-                      <div className="c1h5">
-                        <h5>{latest.date}</h5>
-                      </div>
-                      <div className="c1h4">
-                        <h4>Category: {latest.category}</h4>
-                      </div>
+                    <Link to={`/technology/${latest.id}`} key={footer.id} className="hcc1">
+                      <div className="himg"><img src={latest.img} alt="" /></div>
+                      <div className="c1h3"><h3>{latest.det}</h3></div>
+                      <div className="c1h5"><h5>{latest.date}</h5></div>
+                      <div className="c1h4"><h4>Category: {latest.category}</h4></div>
                     </Link>
                   ))}
               </div>
@@ -54,23 +42,11 @@ const Footer = () => {
                 {footer
                   .filter((data) => data.id === "4")
                   .map((latest) => (
-                    <Link
-                      to={`/tollywood/${latest.id}`}
-                      key={footer.id}
-                      className="hcc1"
-                    >
-                      <div className="himg">
-                        <img src={latest.img} alt="" />
-                      </div>
-                      <div className="c1h3">
-                        <h3>{latest.det}</h3>
-                      </div>
-                      <div className="c1h5">
-                        <h5>{latest.date}</h5>
-                      </div>
-                      <div className="c1h4">
-                        <h4>Category: {latest.category}</h4>
-                      </div>
+                    <Link to={`/tollywood/${latest.id}`} key={footer.id} className="hcc1">
+                      <div className="himg"><img src={latest.img} alt="" /></div>
+                      <div className="c1h3"><h3>{latest.det}</h3></div>
+                      <div className="c1h5"><h5>{latest.date}</h5></div>
+                      <div className="c1h4"><h4>Category: {latest.category}</h4></div>
                     </Link>
                   ))}
               </div>
@@ -78,45 +54,17 @@ const Footer = () => {
                 {footer
                   .filter((data) => data.id === "11")
                   .map((latest) => (
-                    <Link
-                      to={`/jobs/${latest.id}`}
-                      key={footer.id}
-                      className="hcc1"
-                    >
-                      <div className="himg">
-                        <img src={latest.img} alt="" />
-                      </div>
-                      <div className="c1h3">
-                        <h3>{latest.det}</h3>
-                      </div>
-                      <div className="c1h5">
-                        <h5>{latest.date}</h5>
-                      </div>
-                      <div className="c1h4">
-                        <h4>Category: {latest.category}</h4>
-                      </div>
+                    <Link to={`/jobs/${latest.id}`} key={footer.id} className="hcc1">
+                      <div className="himg"><img src={latest.img} alt="" /></div>
+                      <div className="c1h3"><h3>{latest.det}</h3></div>
+                      <div className="c1h5"><h5>{latest.date}</h5></div>
+                      <div className="c1h4"><h4>Category: {latest.category}</h4></div>
                     </Link>
                   ))}
-              </div>
-              <br />
+              </div><br />
             </div>
-            <button
-              className="loadmore"
-              style={{ marginLeft: "0px" }}
-              onClick={loadLess}
-            >
-              LoadLess
-            </button>
-          </>
-        ) : (
-          <button
-            className="loadmore"
-            style={{ marginLeft: "0px" }}
-            onClick={loadMore}
-          >
-            LoadMore
-          </button>
-        )}
+            <button className="loadmore" style={{ marginLeft: "0px" }} onClick={loadLess}>LoadLess </button>
+          </>) : (<button className="loadmore" style={{ marginLeft: "0px" }} onClick={loadMore}> LoadMore </button>)}
       </div>
     </div>
   );

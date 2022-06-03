@@ -7,6 +7,10 @@ body {
   zoom: 80%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.headersiren {
+  text-decoration: none;
+  color: black;
+}
 .ht1 {
   margin-left: 45%;
   font-size: 40px;
@@ -315,7 +319,8 @@ body {
   margin-left: 5%;
   font-size: 20px;
 }
-.vp {
+.vp,
+.vpm {
   margin-left: 5%;
   width: 900px;
   font-size: 25px;
@@ -326,6 +331,10 @@ body {
   top: 80%;
   right: 15%;
 }
+.vpm {
+  display: none;
+}
+
 .clap1 {
   font-size: 50px;
   cursor: pointer;
@@ -379,10 +388,13 @@ body {
 .abobottom {
   margin-left: -150px;
 }
+.tollyh {
+  text-transform: capitalize;
+}
 
 @media screen and (min-width: 360px) and (max-width: 771px) {
   body {
-    margin: 5% 1% 0% 1%;
+    margin: 5% 0% 0% -1.5%;
     overflow-x: hidden;
     zoom: 70%;
   }
@@ -448,15 +460,23 @@ body {
   .flex3 {
     margin-left: -2%;
   }
+  .vp {
+    display: none;
+  }
+  .vpm {
+    display: block;
+  }
   .advs {
     display: none;
   }
   .hc1 {
     margin-bottom: 20px;
+    margin-left: 5px;
     height: 450px;
   }
   .hc2 {
     zoom: 70%;
+    margin-left: 1.5%;
   }
   .tollyt,
   .c2h5,
@@ -555,11 +575,12 @@ body {
     margin-left: 5%;
     zoom: 0.8;
   }
-  .vp {
+  .vp,
+  .vpm {
     margin-left: 5%;
-    width: 450px;
+    width: 460px;
     font-size: 25px;
-    text-align: justify;
+    text-align: left;
   }
   .viewbottom {
     margin-left: -27px;
@@ -588,5 +609,21 @@ body {
   }
   .homefooter {
     margin-top: -50px;
+  }
+}
+@media screen and (min-width: 772px) and (max-width: 1280px) {
+  .viewD {
+    width: fit-content;
+    border: none;
+    box-shadow: none;
+  }
+  .clap {
+    display: none;
+  }
+  .vp {
+    width: fit-content;
+  }
+  .vimg {
+    width: 50%;
   }
 }

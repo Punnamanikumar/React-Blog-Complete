@@ -7,7 +7,6 @@ import Loading from '../loader/Loading';
 const ViewData = () => {
     const {id} =useParams();
     const[dataa,setDataa] =useState({ img:"",det:"",date:"",description:"",category:""})
-
     useEffect(() => {
         axios.get(`https://manikumar-react-blog-server.herokuapp.com/api/blog/?id=${id}`).then((res) => {
             res.data.forEach((view)=>{
@@ -40,7 +39,8 @@ const ViewData = () => {
                 <div className='vimg'><img src={dataa.img} alt="" /></div>
                 <div className='vh3'><h3>{dataa.det}</h3></div>
                 <div className='vh5'><h5>{dataa.date}</h5></div>
-                <div className='vp'><p>{dataa.description}</p></div>
+                <div className='vp'><p>{dataa.description.slice(0,1000)}</p></div>
+                <div className='vpm'><p>{dataa.description.slice(0,250)}</p></div>
             </div>
             </div>
             <div className='viewbottom'><Bottom/></div>

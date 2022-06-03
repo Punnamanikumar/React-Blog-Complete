@@ -14,6 +14,7 @@ const Home = () => {
         setHome(res.data);
       });
   }, []);
+  
   return (
     <div>
       {home.length!==0 ?
@@ -36,7 +37,7 @@ const Home = () => {
                 </Link>
             ))}
            </div>
-    
+           
            <div className="homelate2">
             <div className="thelate">The Latest</div>
             <hr className="hlhr" />

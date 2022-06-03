@@ -1,24 +1,26 @@
 import axios from "axios";
 import * as React from "react";
-import { Link } from "react-router-dom";
+import { Link,useParams } from "react-router-dom";
 import Bottom from "../bottom/Bottom";
 import Loading from "../loader/Loading";
 
-const Jobs = () => {
-  const [jobs, setJobs] = React.useState([]);
+
+const ViewCategory = () => {
+  const [categoryData, setCategoryData] = React.useState([]);
+  const {category}=useParams();
   React.useEffect(() => {
-    axios.get("https://manikumar-react-blog-server.herokuapp.com/api/blog/jobs").then((res) => {
-        setJobs(res.data);
+    axios.get(`https://manikumar-react-blog-server.herokuapp.com/api/blog/${category}`).then((res) => {
+        setCategoryData(res.data);
       });
-  }, []);
+  }, [category]);
   return (
-    <div>{(jobs.length!==0) ?
+    <div>{(category.length!==0) ?
      <div className="categorydiv">
-          <h1 className="tollyh">Jobs</h1>
+          <h1 className="tollyh">{category}</h1>
           <hr className="thhr" />
-          {jobs.map((wood) => (
+          {categoryData.map((wood) => (
           <div key={wood.imgt} className="tolly">
-              <Link to={`/jobs/${wood.id}`} className="tolly">
+              <Link to={`/${category}/${wood.id}`} className="tolly">
                 <div className="tollyi"><img src={wood.img} alt="" /></div>
                 <h3 className="tollyt">{wood.det}</h3>
               </Link>
@@ -35,4 +37,4 @@ const Jobs = () => {
   );
 };
 
-export default Jobs;
+export default ViewCategory;
