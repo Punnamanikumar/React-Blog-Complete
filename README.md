@@ -8,7 +8,7 @@ React-Blog-Project
 
     Back-End :
 
-    Repository URL => https://github.com/Punnamanikumar/React_Blog_server hosted on Heroku Server
+    Repository URL => https://github.com/Punnamanikumar/React_Blog_server hosted on Render Server
 
 This is a Single Page Application  developed using
 
