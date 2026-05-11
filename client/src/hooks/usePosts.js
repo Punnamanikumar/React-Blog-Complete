@@ -1,10 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import axios from 'axios';
-
-// Create an axios instance with the base URL
-const api = axios.create({
-  baseURL: '/api', // This is proxied to http://localhost:5000/api by Vite
-});
+import api from '../api/axios';
 
 // Hook to fetch all posts
 export const usePosts = (category = '') => {
