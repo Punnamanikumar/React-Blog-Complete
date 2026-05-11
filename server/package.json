@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "seed": "node src/utils/seed.js"
+    "seed": "node src/utils/seed.js",
+    "seed:web": "node src/utils/seed_web.js",
+    "seed:all": "node src/utils/seed.js && node src/utils/seed_web.js"
   },
   "author": "PunnaManiKumar",
   "license": "ISC",
