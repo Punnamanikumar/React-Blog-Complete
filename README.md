@@ -2,6 +2,8 @@
 
 A complete, production-ready **MERN stack blog application** featuring a React frontend with a Node.js/Express backend and MongoDB Atlas database. The Siren is a modern editorial blog covering categories including Tollywood, Technology, Jobs, and Nature.
 
+🌐 **Live Demo:** [manikumar-react-blog-complete.netlify.app](https://manikumar-react-blog-complete.netlify.app)
+
 ---
 
 ## ✨ Features
