@@ -12,8 +12,13 @@ const connectDB = require("../config/db");
 const Post = require("../models/Post");
 const User = require("../models/User");
 
-const ADMIN_EMAIL = "admin@thesiren.com";
-const ADMIN_PASSWORD = "Admin@1234";
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
+
+if (!ADMIN_EMAIL || !ADMIN_PASSWORD) {
+  console.error("❌ Error: ADMIN_EMAIL and ADMIN_PASSWORD must be set in your .env file.");
+  process.exit(1);
+}
 
 const posts = [
   {
